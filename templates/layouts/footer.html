@@ -1,0 +1,67 @@
+{% load i18n %}
+{% load static %}
+{% block content %}
+    <!-- Start footer -->
+    <footer id="mu-footer">
+        <!-- start footer top -->
+        <div class="mu-footer-top">
+            <div class="container">
+                <div class="mu-footer-top-area">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <div class="mu-footer-widget">
+                                <h4>{% trans "Ma`lumot"%}</h4>
+                                <ul>
+                                    <li><a href="#">{% trans "Biz haqimizda" %}</a></li>
+                                    <li><a href="">{% trans "Xususiyatlari" %}</a></li>
+                                    <li><a href="">{% trans "Kurs" %}</a></li>
+                                    <li><a href="">{% trans "Tadbirlar" %}</a></li>
+                                    <li><a href="">{% trans "Sayt xaritasi" %}</a></li>
+                                    <li><a href="">{% trans "Foydalanish muddati" %}</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <div class="mu-footer-widget">
+                                <h4>{% trans "Talabaga yordam" %}</h4>
+                                <ul>
+                                    <li><a href="">{% trans "Boshlash" %}</a></li>
+                                    <li><a href="#">{% trans "Mening savollarim" %}</a></li>
+                                    <li><a href="">{% trans "Fayllarni yuklab olish" %}</a></li>
+                                    <li><a href="">{% trans "Yakunlangan kurslar" %}</a></li>
+                                    <li><a href="">{% trans "Ilmiy yangiliklar" %}</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <div class="mu-footer-widget">
+                                <h4>{% trans "Yangilik xati" %}</h4>
+                                <p>{% trans "Eng so'nggi yangilanishlar, yangiliklar va akademik takliflarni oling" %}</p>
+{#                                <p>Get latest update, news & academic offers</p>#}
+                                <form class="mu-subscribe-form">
+                                    <input type="email" placeholder="{% trans 'Elektron pochtangizni kiriting '%}">
+                                    <button class="mu-subscribe-btn" type="submit">{% trans "Obuna bo'ling" %}!</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <div class="mu-footer-widget">
+                                <h4>{% trans "Aloqa" %}</h4>
+                                <address>
+                                    <p>{% trans "Toshkent shahri, Sergeli tumani, Yangi Qo‘yliq ko‘chasi, 50-uy." %}</p>
+                                    <p>{% trans "Telifon" %}: (71)  290-60-07 </p>
+                                    <p>{% trans "Veb-sayt" %}: www.sergeli.khm.uz</p>
+                                    <p>{% trans "Elektron pochta" %}: sergeli.kasb-hunar@mail.ru</p>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end footer top -->
+        <!-- start footer bottom -->
+        <!-- end footer bottom -->
+    </footer>
+    <!-- End footer -->
+{% endblock %}

@@ -1,0 +1,374 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-18 10:09+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\news\models.py:6 .\news\models.py:20 .\news\models.py:32
+#: .\texnicum\models.py:6 .\texnicum\models.py:35 .\texnicum\models.py:63
+msgid "title"
+msgstr "заглавие"
+
+#: .\news\models.py:7 .\news\models.py:33 .\texnicum\models.py:8
+msgid "content"
+msgstr "содержание"
+
+#: .\news\models.py:9 .\news\models.py:35
+msgid "date"
+msgstr "дата"
+
+#: .\news\models.py:15
+msgid "event"
+msgstr "событие"
+
+#: .\news\models.py:16
+msgid "events"
+msgstr "события"
+
+#: .\news\models.py:21 .\news\models.py:34 .\texnicum\models.py:9
+#: .\texnicum\models.py:22 .\texnicum\models.py:38 .\texnicum\models.py:51
+#: .\texnicum\models.py:62
+msgid "images"
+msgstr "картинки"
+
+#: .\news\models.py:27
+msgid "gallery"
+msgstr "галерея"
+
+#: .\news\models.py:28
+msgid "galleries"
+msgstr "галереи"
+
+#: .\news\models.py:41 .\news\models.py:42
+msgid "news"
+msgstr "новости"
+
+#: .\templates\base.html:8
+msgid "Sergeli Tuman Kasb Hunar Maktabi"
+msgstr "Сергелийское районное профессионально-техническое училище"
+
+#: .\templates\base.html:8 .\templates\dacument.html:13
+#: .\templates\department.html:13 .\templates\event.html:12
+#: .\templates\galleries.html:12 .\templates\index.html:237
+#: .\templates\index.html:299 .\templates\index.html:355
+#: .\templates\index.html:410 .\templates\layouts\header.html:61
+#: .\templates\news.html:12 .\templates\staff.html:12
+#: .\templates\vacancy.html:12
+msgid "Bosh sahifa"
+msgstr "Главный"
+
+#: .\templates\dacument.html:14
+msgid "Qabul qilish uchun hujjatlar"
+msgstr "Документы для поступления"
+
+#: .\templates\dacument.html:50 .\templates\department.html:49
+#: .\templates\event.html:45 .\templates\index.html:202
+#: .\templates\index.html:265 .\templates\index.html:324
+#: .\templates\news.html:45 .\templates\staff.html:50
+#: .\templates\vacancy.html:47
+msgid "Ko'proq o'qish"
+msgstr "Читать далее"
+
+#: .\templates\dacument_detail.html:29 .\templates\detail_department.html:28
+#: .\templates\event_detail.html:30 .\templates\news_detail.html:30
+#: .\templates\staff_detail.html:32 .\templates\vacancy_detail.html:29
+msgid "Ulashish"
+msgstr "Поделиться"
+
+#: .\templates\department.html:11 .\templates\department.html:14
+#: .\templates\index.html:233 .\templates\layouts\header.html:66
+msgid "Boshqarma"
+msgstr "Администрация"
+
+#: .\templates\event.html:10 .\templates\event.html:13
+#: .\templates\layouts\footer.html:18 .\templates\layouts\header.html:77
+msgid "Tadbirlar"
+msgstr "События"
+
+#: .\templates\galleries.html:10 .\templates\galleries.html:13
+#: .\templates\layouts\header.html:78
+msgid "Galereya"
+msgstr "Галерея"
+
+#: .\templates\index.html:16
+msgid "Sergili Tuman Kasb-Hunar maktabiga xush kelibsiz"
+msgstr "Добро пожаловать в Сергильское районное профессионально-техническое училище"
+
+#: .\templates\index.html:34
+msgid "O`rganish vaqti"
+msgstr "Учебное время"
+
+#: .\templates\index.html:35
+msgid ""
+"Kasb Hunar Maktabimizda barcha fanlardan xalqaro toifadagi va jaxon "
+"standartlariga javob beradigan adabiyot va kitoblar mavjud."
+msgstr "В нашем профессионально-техническом училище есть литература и книги международного класса и мировых стандартов по всем предметам."
+
+#: .\templates\index.html:41
+msgid "Malakali ustozlar"
+msgstr "Квалифицированные преподаватели"
+
+#: .\templates\index.html:42
+msgid ""
+"Va bundan tashqari bizning jamoada xalqaro va jaxon standartlariga javob "
+"bera oladigan ustozlar ta'lim berishmoqda!"
+msgstr "А кроме того, в нашей команде преподают преподаватели, способные соответствовать международным и мировым стандартам!"
+
+#: .\templates\index.html:48
+msgid "Zamonaviy sinfxonalar"
+msgstr "Современные классы"
+
+#: .\templates\index.html:49
+msgid ""
+"Bizning maktabimizda jaxon standartlariga javob bera oladigan va eng "
+"zamonaviy jihozlar bilan jihozlangan sinfxonalar mavjud."
+msgstr "В нашей школе есть классы, соответствующие международным стандартам и оснащенные самым современным оборудованием."
+
+#: .\templates\index.html:71 .\templates\layouts\footer.html:15
+msgid "Biz haqimizda"
+msgstr "Насчет нас"
+
+#: .\templates\index.html:74
+msgid "Toshkent shahar Sergeli tumani kasb-hunar maktabi to`g`risida ma`lumot"
+msgstr "Информация о ПТУ Сергелийского района города Ташкента"
+
+#: .\templates\index.html:76
+msgid "Bizning maktabimizga 1971-yilda asos solingan."
+msgstr "Наша школа была основана в 1971 году."
+
+#: .\templates\index.html:77
+msgid ""
+"Maktabimiz shahar markazida joylashgan bo`lib hamma shart-sharoitlar bilan "
+"ta'minlangan."
+msgstr "Наша школа расположена в центре города и обеспечена всеми условиями."
+
+#: .\templates\index.html:78
+msgid "Bizning maktabimiz 1776 o`rinli bo`lib 2 smenada darslar olib boriladi."
+msgstr "В нашей школе 1776 мест, занятия проходят в 2 смены."
+
+#: .\templates\index.html:79
+msgid "Maktabimizda o`zbek va rus sinflarida dars olib boriladi."
+msgstr "В нашей школе проводятся занятия по узбекскому и русскому языку."
+
+#: .\templates\index.html:80
+msgid "Maktabimizda 93 nafar pedagog hodimlar faoliyat olib bormoqda."
+msgstr "В нашей школе работает 93 педагогических работника."
+
+#: .\templates\index.html:82
+msgid ""
+"Maktabimiz hozirda dunyo va jahon standarti talablariga javob bera oladigan "
+"darajada jihozlangan"
+msgstr "В настоящее время наша школа оснащена в соответствии с требованиями мировых и международных стандартов"
+
+#: .\templates\index.html:115
+msgid "Fanlar"
+msgstr "Науки"
+
+#: .\templates\index.html:124
+msgid "O'quvchilar"
+msgstr "Ученики"
+
+#: .\templates\index.html:133
+msgid "O'qituvchilar"
+msgstr "Учителя"
+
+#: .\templates\index.html:142
+msgid "Sinfxonalar"
+msgstr "Классы"
+
+#: .\templates\index.html:165 .\templates\index.html:167
+#: .\templates\layouts\header.html:67 .\templates\staff.html:10
+#: .\templates\staff.html:13
+msgid "Xodimlar"
+msgstr "Сотрудники"
+
+#: .\templates\index.html:179
+msgid "Bizning Ustozar"
+msgstr "Наши учителя"
+
+#: .\templates\index.html:295 .\templates\layouts\header.html:73
+#: .\templates\layouts\header.html:76 .\templates\news.html:10
+#: .\templates\news.html:13
+msgid "Yangiliklar"
+msgstr "Новости"
+
+#: .\templates\layouts\footer.html:13
+msgid "Ma`lumot"
+msgstr "Информация"
+
+#: .\templates\layouts\footer.html:16
+msgid "Xususiyatlari"
+msgstr "Характеристики"
+
+#: .\templates\layouts\footer.html:17
+msgid "Kurs"
+msgstr "Курс"
+
+#: .\templates\layouts\footer.html:19
+msgid "Sayt xaritasi"
+msgstr "Карта сайта"
+
+#: .\templates\layouts\footer.html:20
+msgid "Foydalanish muddati"
+msgstr "Дата истечения срока"
+
+#: .\templates\layouts\footer.html:26
+msgid "Talabaga yordam"
+msgstr "Студенческая помощь"
+
+#: .\templates\layouts\footer.html:28
+msgid "Boshlash"
+msgstr "Начинать"
+
+#: .\templates\layouts\footer.html:29
+msgid "Mening savollarim"
+msgstr "Мои вопросы"
+
+#: .\templates\layouts\footer.html:30
+msgid "Fayllarni yuklab olish"
+msgstr "Скачать файлы"
+
+#: .\templates\layouts\footer.html:31
+msgid "Yakunlangan kurslar"
+msgstr "Пройденные курсы"
+
+#: .\templates\layouts\footer.html:32
+msgid "Ilmiy yangiliklar"
+msgstr "Научные новости"
+
+#: .\templates\layouts\footer.html:38
+msgid "Yangilik xati"
+msgstr "Новостная рассылка"
+
+#: .\templates\layouts\footer.html:39
+msgid "Eng so'nggi yangilanishlar, yangiliklar va akademik takliflarni oling"
+msgstr "Получайте последние обновления, новости и академические предложения"
+
+#: .\templates\layouts\footer.html:42
+msgid "Elektron pochtangizni kiriting "
+msgstr "Получайте последние обновления, новости и академические предложения"
+
+#: .\templates\layouts\footer.html:43
+msgid "Obuna bo'ling"
+msgstr "Подписывайся"
+
+#: .\templates\layouts\footer.html:49 .\templates\layouts\header.html:81
+msgid "Aloqa"
+msgstr "Связь"
+
+#: .\templates\layouts\footer.html:51
+msgid "Toshkent shahri, Sergeli tumani, Yangi Qo‘yliq ko‘chasi, 50-uy."
+msgstr "г. Ташкент, Сергелийский район, улица Янги Койлик, 50."
+
+#: .\templates\layouts\footer.html:52
+msgid "Telifon"
+msgstr "Телефон"
+
+#: .\templates\layouts\footer.html:53
+msgid "Veb-sayt"
+msgstr "Веб-сайт"
+
+#: .\templates\layouts\footer.html:54
+msgid "Elektron pochta"
+msgstr "Эл. адрес"
+
+#: .\templates\layouts\header.html:55
+msgid "Sergeli tuman kasb-hunar maktabi"
+msgstr "Сергелийское районное профессионально-техническое училище"
+
+#: .\templates\layouts\header.html:63
+msgid "Texnikum"
+msgstr "Техникум"
+
+#: .\templates\layouts\header.html:68
+msgid "Hujjatlar"
+msgstr "Документы"
+
+#: .\templates\layouts\header.html:69 .\templates\vacancy.html:10
+#: .\templates\vacancy.html:13
+msgid "Vakansiya"
+msgstr "Вакансия"
+
+#: .\texnicum\models.py:7
+msgid "short_content"
+msgstr "короткий_контент"
+
+#: .\texnicum\models.py:15
+msgid "department"
+msgstr "отделение"
+
+#: .\texnicum\models.py:16
+msgid "departments"
+msgstr "отделы"
+
+#: .\texnicum\models.py:20
+msgid "name"
+msgstr "имя"
+
+#: .\texnicum\models.py:21
+msgid "position"
+msgstr "должность"
+
+#: .\texnicum\models.py:23
+msgid "biography"
+msgstr "биография"
+
+#: .\texnicum\models.py:24
+msgid "short_biography"
+msgstr "короткая_биография"
+
+#: .\texnicum\models.py:30 .\texnicum\models.py:31
+msgid "staff"
+msgstr "сотрудники"
+
+#: .\texnicum\models.py:36 .\texnicum\models.py:45
+msgid "documents"
+msgstr "документы"
+
+#: .\texnicum\models.py:37
+msgid "short_document"
+msgstr "короткий_документ"
+
+#: .\texnicum\models.py:44
+msgid "document"
+msgstr "документ"
+
+#: .\texnicum\models.py:49
+msgid "positions"
+msgstr "должности"
+
+#: .\texnicum\models.py:50
+msgid "requirement"
+msgstr "требование"
+
+#: .\texnicum\models.py:57
+msgid "vacancy"
+msgstr "вакансия"
+
+#: .\texnicum\models.py:58
+msgid "vacancies"
+msgstr "свободные_места"
+
+#: .\texnicum\models.py:70
+msgid "banner"
+msgstr "баннер"
+
+#: .\texnicum\models.py:71
+msgid "banners"
+msgstr "баннеры"

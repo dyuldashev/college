@@ -1,0 +1,434 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block content %}
+
+    <!-- Start Slider -->
+    <section id="mu-slider">
+        <!-- Start single slider item -->
+        {% for i in banner %}
+            <div class="mu-slider-single">
+                <div class="mu-slider-img">
+                    <figure>
+                        <img src="{{ i.images.url }}" alt="img">
+                    </figure>
+                </div>
+                <div class="mu-slider-content">
+                    <h4>{% trans 'Sergili Tuman Kasb-Hunar maktabiga xush kelibsiz' %}</h4>
+                    <span></span>
+                    <h3>{{ i.title }}</h3>
+                    <p>{{ i.descriptions }}</p>
+                    {#                    <a href="{% url 'schools220:news' %}" class="mu-read-more-btn">Batafsil</a>#}
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+    <!-- Start service  -->
+    <section id="mu-service">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="mu-service-area">
+                        <!-- Start single service -->
+                        <div class="mu-service-single">
+                            <span class="fa fa-book"></span>
+                            <h3>{% trans "O`rganish vaqti" %}</h3>
+                            <p>{% trans "Kasb Hunar Maktabimizda barcha fanlardan xalqaro toifadagi va jaxon standartlariga javob beradigan adabiyot va kitoblar mavjud." %}</p>
+                        </div>
+                        <!-- Start single service -->
+                        <!-- Start single service -->
+                        <div class="mu-service-single">
+                            <span class="fa fa-users"></span>
+                            <h3>{% trans "Malakali ustozlar" %}</h3>
+                            <p>{% trans "Va bundan tashqari bizning jamoada xalqaro va jaxon standartlariga javob bera oladigan ustozlar ta'lim berishmoqda!" %}</p>
+                        </div>
+                        <!-- Start single service -->
+                        <!-- Start single service -->
+                        <div class="mu-service-single">
+                            <span class="fa fa-table"></span>
+                            <h3>{% trans "Zamonaviy sinfxonalar" %}</h3>
+                            <p>{% trans "Bizning maktabimizda jaxon standartlariga javob bera oladigan va eng zamonaviy jihozlar bilan jihozlangan sinfxonalar mavjud." %}</p>
+                        </div>
+                        <!-- Start single service -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End service  -->
+
+    <!-- Start about us -->
+
+    <section id="mu-about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-about-us-area">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="mu-about-us-left">
+                                    <!-- Start Title -->
+                                    <div class="mu-title">
+                                        <h2>{% trans "Biz haqimizda" %}</h2>
+                                    </div>
+                                    <!-- End Title -->
+                                    <p>{% trans "Toshkent shahar Sergeli tumani kasb-hunar maktabi to`g`risida ma`lumot" %}</p>
+                                    <ul>
+                                        <li>{% trans "Bizning maktabimizga 1971-yilda asos solingan." %}</li>
+                                        <li> {% trans "Maktabimiz shahar markazida joylashgan bo`lib hamma shart-sharoitlar bilan ta'minlangan." %}</li>
+                                        <li>{% trans "Bizning maktabimiz 1776 o`rinli bo`lib 2 smenada darslar olib boriladi." %} </li>
+                                        <li> {% trans "Maktabimizda o`zbek va rus sinflarida dars olib boriladi." %}</li>
+                                        <li>{% trans "Maktabimizda 93 nafar pedagog hodimlar faoliyat olib bormoqda." %}</li>
+                                    </ul>
+                                    <p>{% trans "Maktabimiz hozirda dunyo va jahon standarti talablariga javob bera oladigan darajada jihozlangan" %}.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="mu-about-us-right">
+                                    <a id="mu-abtus-video" href="https://www.youtube.com/embed/LBaiaoIiMCU"
+                                       target="mutube-video">
+                                        <img src="" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Start about us counter -->
+    <
+    <section id="mu-abtus-counter">
+        <div class="container">
+            {% for i in statistics %}
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-abtus-counter-area">
+                            <div class="row">
+                                <!-- Start counter item -->
+                                <div class="col-lg-3 col-md-3 col-sm-3">
+                                    <div class="mu-abtus-counter-single">
+                                        <span class="fa fa-book"></span>
+                                        <h4 class="counter">{{ i.subjects }}</h4>
+                                        <p>{% trans "Fanlar" %}</p>
+                                    </div>
+                                </div>
+                                <!-- End counter item -->
+                                <!-- Start counter item -->
+                                <div class="col-lg-3 col-md-3 col-sm-3">
+                                    <div class="mu-abtus-counter-single">
+                                        <span class="fa fa-users"></span>
+                                        <h4 class="counter">{{ i.students }}</h4>
+                                        <p>{% trans "O'quvchilar" %}</p>
+                                    </div>
+                                </div>
+                                <!-- End counter item -->
+                                <!-- Start counter item -->
+                                <div class="col-lg-3 col-md-3 col-sm-3">
+                                    <div class="mu-abtus-counter-single">
+                                        <span class="fa fa-flask"></span>
+                                        <h4 class="counter">{{ i.modern_labs }}</h4>
+                                        <p>{% trans "O'qituvchilar" %}</p>
+                                    </div>
+                                </div>
+                                <!-- End counter item -->
+                                <!-- Start counter item -->
+                                <div class="col-lg-3 col-md-3 col-sm-3">
+                                    <div class="mu-abtus-counter-single no-border">
+                                        <span class="fa fa-user-secret"></span>
+                                        <h4 class="counter">{{ i.teacher }}</h4>
+                                        <p>{% trans "Sinfxonalar" %}</p>
+                                    </div>
+                                </div>
+                                <!-- End counter item -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+    <!-- End about us counter -->
+
+    <!-- Start our teacher -->
+
+    <section id="mu-course-content">
+        <div class="container">
+            <div class="row">
+                <section id="mu-page-breadcrumb">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mu-page-breadcrumb-area">
+                                    <h2>{% trans "Xodimlar" %}</h2>
+                                    <ol class="breadcrumb">
+                                        <li><a href="{% url 'texnicum:staff' %}">{% trans "Xodimlar" %}</a></li>
+                                        {#                                        <li><a href="{% url 'texnicum:staff' %}">Staff</a></li>#}
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="col-md-12">
+                    <div class="mu-course-content-area">
+                        <div class="row">
+                            {#                            <h4 class="text-center"> Our Teachers </h4>#}
+                            <h4 class="text-center"> {% trans "Bizning Ustozar" %}</h4>
+                            <div class="col-md-12">
+                                <!-- start course content container -->
+                                <div class="mu-course-container mu-blog-archive">
+                                    <div class="row">
+                                        {% for i in staff %}
+                                            <div class="col-md-4 col-sm-4">
+
+                                                <article class="mu-blog-single-item">
+                                                    <figure class="mu-blog-single-img">
+                                                        <figcaption class="mu-blog-caption">
+                                                            <h4><a href="#">{{ i.name }}</a></h4>
+                                                        </figcaption>
+                                                        <a href="#"><img src="{{ i.images.url }}" alt="img"></a>
+                                                    </figure>
+                                                    <div class="mu-blog-meta">
+                                                        <a href="#">{{ i.positions }}</a>
+                                                    </div>
+                                                    <div class="mu-blog-description">
+                                                        <p style="word-wrap: break-word;">{{ i.short_biography }}</p>
+                                                    </div>
+                                                    <div class="mu-blog-description">
+                                                        <a class="mu-read-more-btn"
+                                                           href="{% url 'texnicum:department_detail' pk=i.pk %}">{% trans "Ko'proq o'qish" %}</a>
+                                                    </div>
+                                                </article>
+
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End our teacher -->
+
+    <!-- Start testimonial -->
+    <!-- End breadcrumb -->
+    <section id="mu-course-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-course-content-area">
+                        <div class="row">
+                            <section id="mu-page-breadcrumb">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="mu-page-breadcrumb-area">
+                                                <h2>{% trans "Boshqarma" %}</h2>
+                                                {#                                                <h2>Department</h2>#}
+                                                <ol class="breadcrumb">
+                                                    <li>
+                                                        <a href="{% url 'texnicum:home' %}">{% trans "Bosh sahifa" %}</a>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="col-md-12">
+                                <!-- start course content container -->
+                                <div class="mu-course-container mu-blog-archive">
+                                    <div class="row">
+                                        {% for i in department %}
+                                            <div class="col-md-4 col-sm-4">
+
+                                                <article class="mu-blog-single-item">
+                                                    <figure class="mu-blog-single-img">
+                                                        <figcaption class="mu-blog-caption">
+                                                            <h4><a href="#">{{ i.title }}</a></h4>
+                                                        </figcaption>
+                                                        <a href="#"><img src="{{ i.images.url }}" alt="img"></a>
+                                                    </figure>
+                                                    <div class="mu-blog-meta">
+                                                        <span><i class="fa fa-comments-o"></i>87</span>
+                                                    </div>
+                                                    <div class="mu-blog-description">
+                                                        <p style="word-wrap: break-word;">{{ i.short_content }}</p>
+                                                        <a class="mu-read-more-btn"
+                                                           href="{% url 'texnicum:department_detail' pk=i.pk %}">{% trans "Ko'proq o'qish" %}</a>
+                                                    </div>
+                                                </article>
+
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End testimonial -->
+
+    <!-- End breadcrumb -->
+    <section id="mu-course-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-course-content-area">
+                        <div class="row">
+                            <section id="mu-page-breadcrumb">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="mu-page-breadcrumb-area">
+                                                <h2>{% trans "Yangiliklar" %}</h2>
+                                                {#                                                <h2>News</h2>#}
+                                                <ol class="breadcrumb">
+                                                    <li>
+                                                        <a href="{% url 'texnicum:home' %}">{% trans "Bosh sahifa" %}</a>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="col-md-12">
+                                <!-- start course content container -->
+                                <div class="mu-course-container mu-blog-archive">
+                                    <div class="row">
+                                        {% for i in news %}
+                                            <div class="col-md-4 col-sm-4">
+
+                                                <article class="mu-blog-single-item">
+                                                    <figure class="mu-blog-single-img">
+                                                        <figcaption class="mu-blog-caption">
+                                                            <h4><a href="#">{{ i.title }}</a></h4>
+                                                        </figcaption>
+                                                        <a href="#"><img src="{{ i.images.url }}" alt="img"></a>
+                                                        <a href="#">{{ i.date|date:'d.m.Y H:i' }}</a>
+                                                    </figure>
+                                                    <div class="mu-blog-description">
+                                                        <a class="mu-read-more-btn"
+                                                           href="{% url 'news:news_detail' pk=i.pk %}">{% trans "Ko'proq o'qish" %}</a>
+                                                    </div>
+                                                </article>
+
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End breadcrumb -->
+    {#    <section id="mu-course-content">#}
+    {#        <div class="container">#}
+    {#            <div class="row">#}
+    {#                <div class="col-md-12">#}
+    {#                    <div class="mu-course-content-area">#}
+    {#                        <div class="row">#}
+    {#                            <section id="mu-page-breadcrumb">#}
+    {#                                <div class="container">#}
+    {#                                    <div class="row">#}
+    {#                                        <div class="col-md-12">#}
+    {#                                            <div class="mu-page-breadcrumb-area">#}
+    {#                                                <h2>Event</h2>#}
+    {#                                                <ol class="breadcrumb">#}
+    {#                                                    <li>#}
+    {#                                                        <a href="{% url 'texnicum:home' %}">{% trans 'Bosh sahifa' %}</a>#}
+    {#                                                    </li>#}
+    {#                                                    <li><a href="{% url 'texnicum:home' %}">Home</a></li>#}
+    {#                                                </ol>#}
+    {#                                            </div>#}
+    {#                                        </div>#}
+    {#                                    </div>#}
+    {#                                </div>#}
+    {#                            </section>#}
+    {#                            <div class="col-md-12">#}
+    {#                                <!-- start course content container -->#}
+    {#                                <div class="mu-course-container mu-blog-archive">#}
+    {#                                    <div class="row">#}
+    {#                                        {% for i in event %}#}
+    {#                                            <div class="col-md-4 col-sm-4">#}
+    {##}
+    {#                                                <article class="mu-blog-single-item">#}
+    {#                                                    <figure class="mu-blog-single-img">#}
+    {#                                                        <figcaption class="mu-blog-caption">#}
+    {#                                                            <h4><a href="#">{{ i.title }}</a></h4>#}
+    {#                                                        </figcaption>#}
+    {#                                                        <a href="#"><img src="{{ i.images.url }}" alt="img"></a>#}
+    {#                                                        <a href="#">{{ i.date|date:'d.m.Y H:i' }}</a>#}
+    {#                                                    </figure>#}
+    {#                                                    <div class="mu-blog-description">#}
+    {#                                                        <a class="mu-read-more-btn"#}
+    {#                                                           href="{% url 'news:event_detail' pk=i.pk %}">Ko'proq#}
+    {#                                                            o'qish</a>#}
+    {#                                                        href="{% url 'news:event_detail' pk=i.pk %}">Read More</a>#}
+    {#                                                    </div>#}
+    {#                                                </article>#}
+    {##}
+    {#                                            </div>#}
+    {#                                        {% endfor %}#}
+    {#                                    </div>#}
+    {#                                </div>#}
+    {#                            </div>#}
+    {##}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </section>#}
+    <!-- Start gallery  -->
+    <section id="mu-gallery">
+        <div class="container">
+            <div class="row">
+                <section id="mu-page-breadcrumb">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mu-page-breadcrumb-area">
+                                    {% get_current_language as LANGUAGE_CODE %}
+                                    <h2>{% if LANGUAGE_CODE == "ru" %} Галерея {% else %} Galereya {% endif %}</h2>
+                                    <ol class="breadcrumb">
+                                        <li><a href="{% url 'texnicum:home' %}">{% trans 'Bosh sahifa' %}</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="col-md-12 gallery-margin" style="margin-top: 40px;">
+                    <div class="mu-gallery-area">
+                        {% for i in gallery %}
+                            <div class="item col-sm-6 col-md-4 col-lg-4">
+                                <a href="{{ i.images.url }}" class="fancybox" data-fancybox="gallery1">
+                                    <img src="{{ i.images.url }}" alt="{{ i.title }}" width="100%" height="100%"
+                                         class="img-fluid">
+                                </a>
+                                <h3 style="word-wrap: break-word"> {{ i.title }} </h3>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
