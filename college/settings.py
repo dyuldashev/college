@@ -3,8 +3,6 @@ from pathlib import Path
 import django.conf.locale
 from django.utils.translation import gettext_lazy as _
 
-gettext = lambda s: s
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-%lbo48=6&gnap^!m^#al1h-1istt#2cau6^os(v6mjkr1$q7u4'
@@ -98,9 +96,6 @@ LOCALE_PATHS = (
 # LANG_INFO.update(**EXTRA_LANG_INFO)
 # django.conf.locale.LANG_INFO = LANG_INFO
 
-LOCALE_PATHS = [
-    os.path.join(BASE_DIR, 'locale/')
-]
 
 TIME_ZONE = 'Asia/Tashkent'
 
@@ -109,7 +104,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
