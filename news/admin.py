@@ -1,11 +1,10 @@
 from django.contrib import admin
 from news.models import GalleryModel, NewsModel, EventModel
-# from modeltranslation.admin import TranslationAdmin
 #
 #
-# admin.site.register(NewsModel)
-# admin.site.register(GalleryModel)
-# admin.site.register(EventModel)
+admin.site.register(NewsModel)
+admin.site.register(GalleryModel)
+admin.site.register(EventModel)
 
 
 #
